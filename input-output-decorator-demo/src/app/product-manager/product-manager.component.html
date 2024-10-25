@@ -1,0 +1,11 @@
+<p>product-manager works!</p>
+<app-search (ev)="alok($event)"></app-search>
+
+<div *ngFor="let p of products">
+    <h1>{{p.pid}}</h1>
+    <h2>{{p.pname}}</h2>
+    <h3>{{p.review}}</h3>
+
+</div>
+
+<h1>{{searchT}}</h1>

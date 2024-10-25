@@ -1,0 +1,11 @@
+<h2>Movie</h2>
+<div>
+    <app-search (search)="onSearch($event)"></app-search>
+  
+    <div *ngFor="let movie of filteredMovies">
+      <h3>{{ movie.name }}</h3>
+      <p>Actor: {{ movie.actor }}</p>
+      <p>Rating: {{ movie.rating }}</p>
+    </div>
+  </div>
+  

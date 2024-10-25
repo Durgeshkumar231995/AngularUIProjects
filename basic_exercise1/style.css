@@ -1,0 +1,49 @@
+html,body {
+  
+    font-size: 18pt;
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    border: 1px solid black;
+    margin: 0 100px;
+    padding: 20px;
+    box-sizing: border-box;
+    flex: 1;
+}
+.banner {
+    width: 960px;
+    height: 275px;
+    border: 1px solid #000;
+    display: block;
+    margin: 0 auto;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 180px;
+    height: 200px;
+    border: 1px solid #000;
+    margin: 10px;
+}
+
+.aboutpara {
+    text-align: left;
+    margin: 0 auto;
+}

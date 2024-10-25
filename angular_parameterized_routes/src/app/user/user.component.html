@@ -1,0 +1,32 @@
+<h2>user details of the user fetched by id</h2>
+
+<div>
+    <label for="userId">Enter User ID:</label>
+    <input type="text" id="userId" [(ngModel)]="userIdInput" placeholder="User ID" />
+    <button (click)="searchUser()">Search</button>
+  </div>
+
+<div *ngIf="loading">
+    <p>Loading...</p>
+  </div>
+  
+  <div *ngIf="error">
+    <p class="error">{{ error }}</p>
+  </div>
+  
+  <div *ngIf="user">
+    <h2>User Details</h2>
+    <div>
+      <label for="userName">Name:</label>
+      <span id="userName">{{ user.name }}</span>
+    </div>
+    <div>
+      <label for="userEmail">Grade:</label>
+      <span id="userEmail">{{ user.grade }}</span>
+    </div>
+    <div>
+      <label for="userAge">Gpa:</label>
+      <span id="userAge">{{ user.gpa }}</span>
+    </div>
+  </div>
+  

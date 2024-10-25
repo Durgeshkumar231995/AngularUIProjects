@@ -1,0 +1,6 @@
+<p>login works!</p>
+<form (ngSubmit)="onSubmit()" #frm="ngForm">
+    <input type="text" name="username" #uname="ngModel" [(ngModel)]="username">
+    <input type="text" name="pwd" #pwd="ngModel" [(ngModel)]="pwd1">
+    <input type="submit" value="Login">
+    </form>
